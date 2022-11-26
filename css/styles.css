@@ -1,0 +1,317 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #eeeeee;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.h1-head {
+  text-align: center;
+  color: #ffe1e1;
+  position: relative;
+  top: 150px;
+}
+
+hr {
+  border: dotted #b9e0ff 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  opacity: 100%;
+}
+
+/* Navigation  */
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(..//img/pc1.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.logo a {
+  position: fixed;
+  float: left;
+  margin: 16px 36px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  margin: 0px;
+}
+
+.nav-text {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+.nav-text:after {
+  content: '';
+  position: absolute;
+  background-color: #ff3c78;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.nav-text:hover {
+  color: #ffffff;
+}
+
+.nav-text:hover::after {
+  width: 100%;
+}
+
+.img-logo {
+  height: 20%;
+  width: 18%;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: white;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Order Button  */
+
+.btno {
+  position: relative;
+  background: #444;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: 0.5s;
+  text-transform: uppercase;
+  left: 590px;
+  top: 260px;
+}
+
+.btno:hover {
+  letter-spacing: 0.25em;
+  background: var(--clr);
+  color: var(--clr);
+  box-shadow: 0 0 35px var(--clr);
+}
+
+.btno::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #27282c;
+}
+
+.btno span {
+  position: relative;
+  z-index: 1;
+}
+.btno i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.btno i::before {
+  content: '';
+  position: absolute;
+  top: -3.5px;
+  left: 80%;
+  height: 5px;
+  width: 10px;
+  border: 2px solid var(--clr);
+  background: #27282c;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.btno:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+
+.btno i::after {
+  content: '';
+  position: absolute;
+  bottom: -3.5px;
+  left: 20%;
+  height: 5px;
+  width: 10px;
+  border: 2px solid var(--clr);
+  background: #27282c;
+  transition: 0.5s;
+}
+.btno:hover i::after {
+  width: 20px;
+  left: 80%;
+}
+
+/* Services  */
+
+#services {
+  padding: 80px 100px 0 100px;
+  text-align: center;
+}
+
+.services-head {
+  margin: 0 0 20px 0;
+  padding: 0px;
+  text-align: center;
+}
+
+.services-column {
+  padding: 3% 3%;
+  text-align: center;
+  margin-right: 100px;
+}
+
+/* Gallary  */
+
+#gallary {
+  padding-top: 80px;
+}
+
+.gallary-column {
+  margin: 0;
+}
+
+.gallary-img {
+  margin-bottom: 5px;
+}
+
+/* Our Team */
+#our-team {
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+  padding: 80px 5px 5px 5px;
+}
+
+.ourteam-img {
+  height: 400px;
+  width: 25%;
+  margin: 20px;
+  border-radius: 10%;
+}
+
+.ourteam-text {
+  position: relative;
+}
+
+.team-wrapper {
+  height: 600px;
+  width: auto;
+  background-color: #f7a4a4;
+}
+
+/* Contact */
+
+#contact {
+  background: #7d8f69;
+  padding: 20px 5px 0 20px;
+}
+
+.contact-head {
+  margin-top: 50px;
+  padding: 0;
+  text-align: center;
+}
+
+.contact-form {
+  height: 450px;
+  width: 400px;
+  margin-left: 450px;
+}
+
+.contact-img {
+  position: relative;
+  bottom: 300px;
+  padding-right: 50px;
+  margin-left: 5px;
+}
+
+.square-button {
+  margin: 10px 40% 0;
+}
+
+.input-block {
+  margin-bottom: 30px;
+}
+.textarea {
+  margin: 0;
+}
+
+.mail {
+  position: relative;
+  width: 250px;
+  bottom: 400px;
+  left: 1000px;
+}
+
+.contact-i {
+  padding-right: 20px;
+}
+
+/* Footer  */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eeeeee;
+}
+
+/* Order Page  */
+
+.order-container {
+  position: relative;
+  top: 30%;
+  padding: 30px;
+}
+
+.order-box {
+  padding: 0 0 30px 0;
+  margin-right: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
